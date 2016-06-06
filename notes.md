@@ -1,8 +1,22 @@
+## Characters
+java uses Unicode characters
+char is an unsigned 16 bit type w/ range from 0 to 65,535
+ASCII charset uses 0 to 127 and is a valid subset of Unicode.
+Since char is a 16 bit numeric type, we can perform arithmetic operations on it
+
+Assignment
+Dynamic initializaiton is a thing
+
 ## Passing arguments to methods
 ** When passing objects to methods, you are passing the object reference, not the actual object itself!
 When you pass a primitive variable, you are passing a copy of the bits representing the variable. (pass by value)
 
-## Scope
+## Scope and lifecycle
+lifetime of a variable is within its scope
+each block defines a new scope
+Nesting blocks passes varables into the inner block
+
+
     class Ex1{
       static int x = 10;
       public static void main(String[] args) {
@@ -48,4 +62,58 @@ Note: Overloaded methods should be used sparingly, as they can make code much le
 public PrintStream printf(String format, Object... args)
 or
 public PrintStream printf(String format, Object... args)
+
+
+# Java reserved Keywords
+abstract
+assert
+boolean
+break
+byte
+case
+catch
+char
+class
+const
+continue
+default
+do
+double
+else
+enum
+extends
+final
+finally
+float
+for
+goto
+if
+implements
+import
+instanceof
+int
+interface
+long
+native
+new
+package
+private
+protected
+public
+return
+short
+static
+strictftp
+super
+switch
+synchronized
+this
+throw
+throws
+transient
+try
+void
+volatile
+while
+
 

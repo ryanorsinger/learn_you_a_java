@@ -15,3 +15,13 @@
 
 Followed by Swing http://docs.oracle.com/javase/tutorial/uiswing/index.html to make a desktop app
 
+
+## Recommended Reading
+"Java A Beginner's Guide" - Herbert Schildt
+"OCA Oracle Certified Associate Java SE 8 Programmer I Study Guide" - Boyarsky, Selikoff
+
+## Sets of Exercises
+- "57 exercises for programmers"
+- "Codeup exercises in Java"
+- "Epicodus"
+-
