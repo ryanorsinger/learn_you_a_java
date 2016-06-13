@@ -3,37 +3,41 @@ class Vehicle {
     int fuelcap;
     int mpg;
 
-    void range() {
-        System.out.println("Range is " + fuelcap * mpg);
+    Vehicle(int p, int f, int m) {
+        passengers = p;
+        fuelcap = f;
+        mpg = m;
+    }
+
+    int range() {
+        return mpg * fuelcap;
     }
 
     double fuelneeded(int miles) {
         return (double) miles / mpg;
     }
+
+    protected void finalize() {
+        System.out.println("finalize method was called. Finalize is similar but not the same as a destructor.");
+        System.out.println("Destructors are always called before an object goes out of scope.");
+        System.out.println("Finalize() runs right before the object is recycled by garbage collection.");
+        System.out.println("If the program ends before garbage collection occurs, finalize() will not execute");
+    }
 }
 
 class VehicleDemo {
     public static void main(String[] args) {
-        Vehicle minivan = new Vehicle();
-        Vehicle sportscar = new Vehicle();
+        Vehicle minivan = new Vehicle(7, 16, 21);
+
+        Vehicle sportscar = new Vehicle(2, 14, 12);
+
         double gallons;
         int distance = 252;
-        int range1, range2;
-
-        // assign values to minivan object
-        minivan.passengers = 7;
-        minivan.fuelcap = 16;
-        minivan.mpg = 21;
-
-        // assign values to sportscar
-        sportscar.passengers = 2;
-        sportscar.fuelcap = 14;
-        sportscar.mpg = 12;
 
         System.out.print("The minivan can carry " + minivan.passengers + ". ");
         minivan.range();
 
-        System.out.print("The sportscar can carry" + sportscar.passengers + ". ");
+        System.out.print("The sportscar can carry " + sportscar.passengers + ". ");
         sportscar.range();
 
         gallons = minivan.fuelneeded(distance);

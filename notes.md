@@ -4,7 +4,12 @@ char is an unsigned 16 bit type w/ range from 0 to 65,535
 ASCII charset uses 0 to 127 and is a valid subset of Unicode.
 Since char is a 16 bit numeric type, we can perform arithmetic operations on it
 
-Assignment
+## Default constructor
+Initializes all member variables to default values (zero, null, and false for numerics, references, and booleans)
+Defining a constructor means the default is no longer used.
+
+
+# Assignment
 Dynamic initializaiton is a thing
 
 ## Passing arguments to methods
