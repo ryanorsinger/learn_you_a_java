@@ -14,7 +14,6 @@ and that object is {1, 99, 3};
 so both foo and bar are {1, 99, 3}; now
 
 to copy an array, do this:
-int[] foo = { 1, 2, 3 };
 int[] bar = foo.clone();
 
 ## Default constructor
@@ -32,14 +31,13 @@ When you pass a primitive variable, you are passing a copy of the bits represent
 ## Scope and lifecycle
 lifetime of a variable is within its scope
 each block defines a new scope
-Nesting blocks passes varables into the inner block
-
+Nesting blocks passes variables into the inner block
 
     class Ex1{
-      static int x = 10;
-      public static void main(String[] args) {
-       for(int x=0;x<5;x++){
-          }
+        static int x = 10;
+        public static void main(String[] args) {
+        for(int x=0;x<5;x++){
+        }
         System.out.print(x);
       }
     }
