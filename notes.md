@@ -4,6 +4,19 @@ char is an unsigned 16 bit type w/ range from 0 to 65,535
 ASCII charset uses 0 to 127 and is a valid subset of Unicode.
 Since char is a 16 bit numeric type, we can perform arithmetic operations on it
 
+## ARRAYS
+Array variables always assign by reference b/c they are implemented as objects
+int[] foo = {1, 2, 3};
+int[] bar = foo;
+bar[1] = 99;
+foo and bar both refer to the same object
+and that object is {1, 99, 3};
+so both foo and bar are {1, 99, 3}; now
+
+to copy an array, do this:
+int[] foo = { 1, 2, 3 };
+int[] bar = foo.clone();
+
 ## Default constructor
 Initializes all member variables to default values (zero, null, and false for numerics, references, and booleans)
 Defining a constructor means the default is no longer used.

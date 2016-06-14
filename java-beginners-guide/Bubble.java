@@ -5,7 +5,7 @@
 
 class Bubble {
     public static void main(String[] args) {
-        int nums[] = { 1, 22, -42, 12, 62, 29, 100 };
+        int nums[] = { 1, 22, -42, 44, 12, 62, 29, 100 };
         int size = nums.length;
         int a, b, t;
 
