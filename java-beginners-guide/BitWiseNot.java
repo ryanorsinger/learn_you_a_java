@@ -1,3 +1,6 @@
+/*
+ * Bitwise NOT reverses all bits.
+ */
 class BitWiseNot {
     public static void main(String[] args) {
 
