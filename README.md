@@ -1,14 +1,23 @@
-## Rationale
+# Rationale
+
+## Tooling
+
+
+
+## Prework
+
 
 # Getting Started
 
 ## Prerequisites
 - Install the JDK 8 for your operating system.
-- Install Netbeans
+- Install Eclipse
 
 ## To Dos
 
-- Complete each and every one of of the trails in order from "Trails Covering the Basics".   http://docs.oracle.com/javase/tutorial/index.html.
+- Complete each and every one of of the trails in order from "Trails Covering the Basics".
+http://docs.oracle.com/javase/tutorial/index.html.
+
 - Then complete the Oracle docs & tutorials on Reflection http://docs.oracle.com/javase/tutorial/reflect/index.html and Generics
 - Then move into http://docs.oracle.com/javase/tutorial/javabeans/index.html
 
